@@ -5,7 +5,6 @@ turtle.screensize(750,680)
 bgcolor ("black")
 speed (5)
 penup()
-
 def tom():
    setposition(-45,-340)
    color ("white","#4b6d9a")
@@ -30,9 +29,7 @@ def tom():
    circle (-50,40)
    left(60)
    forward(25)
-   
-#ear         ****************************************************************
-  
+#ear         
    right(-55)
    circle (-80,50)
    right(10)
@@ -42,9 +39,7 @@ def tom():
    circle (160,-65)
    right(70)
    circle (-130,30)
-
-#      **************************************************************************
-   
+# ****************
    right(30)
    backward(40)
    circle (-17,-40)
@@ -62,9 +57,7 @@ def tom():
    pendown()
    end_fill()
    penup()
-
-#jerry     **************************************************************
-
+#jerry     
 def jerry():
    setposition(-45,-340)
    color ("white","#faa505")
@@ -94,9 +87,7 @@ def jerry():
    end_fill()
    penup()
    hideturtle()
-
-#face    *****************************************************************
-
+#face    
 def face():
    speed (11)
    pensize(1)
@@ -107,7 +98,7 @@ def face():
    left(38)
    forward(80)
    right(90)
-   forward(90)    #********************************************************  
+   forward(90)      
    speed(9)
    circle(-20,155)
    left(160)
@@ -117,9 +108,7 @@ def face():
    pendown()
    end_fill()
    penup()
-   
-#mouth    **************************************************************
-
+#mouth    
 def mouth():
    speed (11)
    right(68)
@@ -138,9 +127,7 @@ def mouth():
    circle (30,-180)
    end_fill()
    penup()
-
-   #nose   ***************************************************************
-
+#nose   
    setposition(-70,110)
    color ("black")
    pendown()
@@ -151,9 +138,7 @@ def mouth():
    circle (40,95)
    end_fill()
    penup()
-  
-   #      ***************************************************************
-   
+# *********************
    pensize (3)
    color ("floralwhite")
    begin_fill()
@@ -163,9 +148,7 @@ def mouth():
    circle(3)
    end_fill()
    penup()
-   
-#mouth   ****************************************************************
-
+#mouth   
    pensize (4)
    setposition(-40,105)
    color ("black")
@@ -185,15 +168,12 @@ def mouth():
    forward(70)
    end_fill()
    penup()
- 
    setposition(-73,-5)
    pendown()
    left(40)
    circle (-50,-80)
    penup()
-   
-#eye tom     *************************************************************
-
+#eye tom     
 def tomeye():
    speed(9)
    setposition(-105,118)
@@ -233,8 +213,7 @@ def tomeye():
    circle (5)
    end_fill()
    penup() 
-   
-#eye jerry   ************************************************************
+#eye jerry   
 def jerryeye():
    setposition(95,82)
    color ("black","white")
@@ -273,10 +252,7 @@ def jerryeye():
    circle (5)
    end_fill()
    penup()
-
-
-#mesai      ****************************************************************
-
+#mesai      
 def tommesai():
    pensize(2)
    speed (8)
@@ -300,11 +276,8 @@ def tommesai():
    right(65)
    circle(100,60)
    penup()
-
-#                ****************************************************************
-
+# **********************
 def jerrymesai():
-    
    setposition(20,40)
    color ("black")
    pendown()
@@ -325,9 +298,7 @@ def jerrymesai():
    left(65)
    circle(100,-60)
    penup()
-   
-#ear tom    ****************************************************************
-
+#ear tom    
 def tomear():
    speed(10)
    pensize(1)
@@ -354,9 +325,7 @@ def tomear():
    circle (20,-90)
    setposition(-287,138)
    end_fill()
-   
-#ear jerry  ***************************************************************
-
+#ear jerry  
 def jerryear():
    penup()
    setposition(165,134)
@@ -376,9 +345,7 @@ def jerryear():
    penup()
    end_fill()
    penup()
-
-#eye brows tom   *********************************************************
-
+#eye brows tom   
 def tom_eye_brow():
    speed(5)   
    color ("black")
@@ -388,11 +355,8 @@ def tom_eye_brow():
    right(160)
    circle (40,-90)
    penup()
-
-#eye brows Jerry   ********************************************************
-
+#eye brows Jerry   
 def jerry_eye_brow():
-       
    color ("black")
    pensize (6)
    setposition(55,205)
@@ -400,9 +364,7 @@ def jerry_eye_brow():
    left(-260)
    circle (40,-90)
    penup()
-
-#heart    ******************************************************************
-
+#heart    
 def heart():
    speed (3)
    setposition(-45,-330)
@@ -417,7 +379,6 @@ def heart():
    setposition(-45,-330)
    end_fill()
    penup ()
-    
 def font():
    setposition(-180,-140)
    pendown()
@@ -503,25 +464,3 @@ heart ()
 font()
 
 done ()
-
-#arial
-#verdana
-#courier
-# calibri
-#Time New Roman
-#Apple Chancery
-# Helvetica
-# Comic Sans MS    ----------- 1  
-# Impact
-# Georgia          -----------2
-# Tahoma
-# Trebuchet MS
-# Lucida Sans Unicode
-#  Fixedsys
-# Times              ---------3
-# Palatino           ---------4
-# Lucida console 
-# Cooper Black
-
-
-#f0cece
