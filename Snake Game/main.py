@@ -7,24 +7,24 @@ import time
 #creating turtle screen
 screen = turtle.Screen()
 screen.title('SNAKE GAME')
-screen.setup(width = 800, height = 650,)
+screen.setup(width = 1200, height = 700,)
 screen.tracer(0)
-turtle.bgcolor('gray')
+turtle.bgcolor('#5B99C2')
 
 
 ##creating a border for our game
 
 turtle.speed(5)
-turtle.pensize(4)
+turtle.pensize(3)
 turtle.penup()
-turtle.goto(-310,250)
+turtle.goto(-350,250)
 turtle.pendown()
 turtle.color('black')
-turtle.forward(600)
+turtle.forward(700)
 turtle.right(90)
 turtle.forward(500)
 turtle.right(90)
-turtle.forward(600)
+turtle.forward(700)
 turtle.right(90)
 turtle.forward(500)
 turtle.penup()
@@ -38,7 +38,7 @@ delay = 0.1
 snake = turtle.Turtle()
 snake.speed(0)
 snake.shape("circle")
-snake.color("blue","black")
+snake.color("#405D72","#03346E")
 snake.penup()
 snake.goto(0,0)
 snake.direction = 'stop'
@@ -60,7 +60,7 @@ scoring.speed(0)
 scoring.color("yellow")
 scoring.penup()
 scoring.hideturtle()
-scoring.goto(0,270)
+scoring.goto(0,290)
 scoring.write("Score :",align="center",font=("Courier",22,"bold"))
 
 
@@ -123,7 +123,7 @@ while True:
                 new_fruit = turtle.Turtle()
                 new_fruit.speed(0)
                 new_fruit.shape('circle')
-                new_fruit.color('red')
+                new_fruit.color("green","yellow")
                 new_fruit.penup()
                 old_fruit.append(new_fruit)
                
@@ -142,20 +142,20 @@ while True:
         snake_move()
 
         ##snake and border collision   
-        if snake.xcor()>280 or snake.xcor()< -300 or snake.ycor()>240 or snake.ycor()<-240:
+        if snake.xcor()>350 or snake.xcor()< -350 or snake.ycor()>240 or snake.ycor()<-240:
                 time.sleep(1)
                 screen.clear()
                 scoring.color("red")
-                screen.bgcolor('gray')
+                screen.bgcolor('#5B99C2')
                 scoring.goto(0,0)
-                scoring.write("   GAME OVER ! \n ",align="center",font=("Courier",30,"bold"))
+                scoring.write("   GAME OVER ! \n ",align="center",font=("Courier",40,"bold"))
                 scoring.color("orange")
                 scoring.write("   Your Score is {}".format(score),align="center",font=("Courier",26,"bold"))
 
         ## snake collision
         for food in old_fruit:
                 if food.distance(snake) < 20:
-                        time.sleep(1)
+                        time.sleep(9)
                         screen.clear()
                         screen.bgcolor('gray')
                         scoring.goto(0,0)
